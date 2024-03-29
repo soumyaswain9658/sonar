@@ -29,7 +29,7 @@ pipeline{
                   withDockerRegistry(credentialsId: 'docker', toolName: 'docker') {
                     sh "docker build -t netflix1 ."
                     
-                    sh "docker push chiku1234/netflix1:latest "
+                    sh "docker push netflix1 "
             }
                }
         }
