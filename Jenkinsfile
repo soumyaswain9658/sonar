@@ -27,9 +27,9 @@ pipeline{
             steps{
                script{
                   withDockerRegistry(credentialsId: 'docker', toolName: 'docker') {
-                    sh "docker build -t netflix1/chiku ."
+                    sh "docker build -t netflix1 ."
                    
-                    sh "docker push netflix1/chiku "
+                    sh "docker push netflix1 "
             }
                }
         }
