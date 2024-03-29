@@ -36,6 +36,11 @@ pipeline{
         }
 
     }
+        stage('Deploy to container'){
+            steps{
+                sh 'docker run -d --name netflix1 -p 8081:80 chiku1234/netflix1:version1'
+            }
+        }
   }
 
 }
