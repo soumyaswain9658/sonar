@@ -4,6 +4,7 @@
     <groupId>com.netflix1</groupId>
     <artifactId>netflix1</artifactId>
     <version>1.0</version>
+    <packaging>jar</packaging>
     <build>
     <finalName>netflix1</finalName>
     </build>
