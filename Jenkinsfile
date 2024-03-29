@@ -23,9 +23,18 @@ pipeline{
             }
         }
 
-    
+        stage('build and push in docker '){
+            steps{
+               script{
+                  withDockerRegistry(credentialsId: 'docker', toolName: 'docker') {
+                    sh "docker build -t netflix1/chiku ."
+                    sh "docker tag netflix11 netflix1/chiku:latest "
+                    sh "docker push netflix1/chiku:latest "
+            }
+               }
+        }
 
     }
-
+    }
 
 }
