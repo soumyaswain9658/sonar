@@ -4,10 +4,10 @@
     <groupId>com.netflix</groupId>
     <artifactId>netflix1</artifactId>
     <version>1.0</version>
-    <packaging>jar</packaging>
-    <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>14</maven.compiler.source>
-        <maven.compiler.target>14</maven.compiler.target>
-    </properties>
+    <build>
+    <finalName>netflix1</finalName>
+    </build>
 </project>
+
+
+
